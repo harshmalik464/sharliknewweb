@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Control Systems - Smart Entry & Authorization Management | Sharlik Solutions</title>
+    <meta name="description"
+        content="Advanced access control solutions from basic keycard systems to biometric integration. HIPAA-compliant, ADA-accessible, scalable enterprise security infrastructure." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsharlikco6768back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+
+<body class="bg-background">
+    <!-- Emergency Contact Bar -->
+    <!-- <div class="bg-accent text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-sm">
+            <span class="font-semibold">🚨 24/7 Emergency Support: (555) 911-FIRE</span>
+            <span>Response Time: &lt; 15 minutes</span>
+        </div>
+    </div> -->
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="../assets/images/logo.png" alt="Sharlik Solutions" class="h-10 w-auto" />
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-secondary-700 hover:text-primary transition-colors">Home</a>
+                    <a href="fire_safety_solutions.html"
+                        class="text-secondary-700 hover:text-primary transition-colors">Fire Safety</a>
+                    <a href="security_systems.html"
+                        class="text-secondary-700 hover:text-primary transition-colors">Security Systems</a>
+                    <a href="access_control.html"
+                        class="text-primary font-semibold border-b-2 border-primary pb-1">Access Control</a>
+                    <a href="about_sharlik.html"
+                        class="text-secondary-700 hover:text-primary transition-colors">About</a>
+                    <a href="resource_hub.html"
+                        class="text-secondary-700 hover:text-primary transition-colors">Resources</a>
+                    <button class="emergency-cta contactPopup">Contact Us</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-secondary-700 hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="homepage.html" class="text-secondary-700">Home</a>
+                    <a href="fire_safety_solutions.html" class="text-secondary-700">Fire Safety</a>
+                    <a href="security_systems.html" class="text-secondary-700">Security Systems</a>
+                    <a href="access_control.html" class="text-primary font-semibold">Access Control</a>
+                    <a href="about_sharlik.html" class="text-secondary-700">About</a>
+                    <a href="resource_hub.html" class="text-secondary-700">Resources</a>
+                    <button class="contactPopup emergency-cta w-full mt-3">Contact Us</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Interactive Simulator -->
+    <section
+        class="relative bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-900 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5" />
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                            Smart Entry &
+                            <span class="text-success">Authorization</span>
+                            Management
+                        </h1>
+                        <p class="text-xl text-secondary-300 max-w-lg">
+                            Advanced access control solutions from basic keycard systems to biometric integration.
+                            Scalable, compliant, and secure.
+                        </p>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-success">Reliable Uptime</div>
+                            <div class="text-sm text-secondary-400">Built with quality hardware and tested for
+                                consistent 24/7 operation</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-success">Face recognition using AI</div>
+                            <div class="text-sm text-secondary-400">Coming Soon</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-success">ADA</div>
+                            <div class="text-sm text-secondary-400">Compliant</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-success">HIPAA</div>
+                            <div class="text-sm text-secondary-400">Ready</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class=" openPopup btn-primary text-lg px-8 py-4">Get Quotation</button>
+
+                    </div>
+                </div>
+
+                <!-- Interactive Access Control Simulator -->
+                <div class="relative">
+                    <div id="access-simulator"
+                        class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Access Control Simulator</h3>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                                <span class="text-sm">Live Demo</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulator Interface -->
+                        <div class="space-y-4">
+                            <div class="bg-white/5 rounded-lg p-4">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-sm font-medium">Main Entrance</span>
+                                    <span class="text-xs bg-success/20 text-success px-2 py-1 rounded">ACTIVE</span>
+                                </div>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <button
+                                        class="access-method active bg-success/20 border border-success/40 p-3 rounded text-center text-xs"
+                                        data-method="card">
+                                        <div class="text-lg mb-1">💳</div>
+                                        <div>Card Reader</div>
+                                    </button>
+                                    <button
+                                        class="access-method bg-white/10 border border-white/20 p-3 rounded text-center text-xs hover:bg-white/20"
+                                        data-method="biometric">
+                                        <div class="text-lg mb-1">👆</div>
+                                        <div>Biometric</div>
+                                    </button>
+                                    <button
+                                        class="access-method bg-white/10 border border-white/20 p-3 rounded text-center text-xs hover:bg-white/20"
+                                        data-method="mobile">
+                                        <div class="text-lg mb-1">🙂</div>
+                                        <div>Face</div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Access Log -->
+                            <div class="bg-white/5 rounded-lg p-4">
+                                <h4 class="text-sm font-medium mb-2">Recent Access Events</h4>
+                                <div id="access-log" class="space-y-2 text-xs">
+                                    <div class="flex justify-between items-center">
+                                        <span>Sarah Johnson - Marketing</span>
+                                        <span class="text-success">✓ Granted</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>Mike Chen - IT</span>
+                                        <span class="text-success">✓ Granted</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>Visitor Badge #1247</span>
+                                        <span class="text-warning">⏳ Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Tiers -->
+
+
+
+    <!-- Technology Showcase -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-secondary-900 mb-4">Advanced Technology Features</h2>
+                <p class="text-xl text-secondary-600">Cutting-edge access control technologies that adapt to your
+                    evolving security needs</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Mobile Credentials -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Smart Card Access Systems</h3>
+                    <p class="text-secondary-600 text-sm">Secure and scalable access using encrypted smart cards, and centralized authorization.bility</p>
+                </div>
+
+                <!-- Biometric Integration -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Biometric Integration</h3>
+                    <p class="text-secondary-600 text-sm">Fingerprint, facial recognition, and iris scanning for maximum
+                        security</p>
+                </div>
+
+                <!-- Visitor Management -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Visitor Management</h3>
+                    <p class="text-secondary-600 text-sm">Automated visitor registration, badge printing, and escort
+                        notifications</p>
+                </div>
+
+                <!-- Real-time Monitoring -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd"
+                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Real-time Monitoring</h3>
+                    <p class="text-secondary-600 text-sm">Live dashboard with instant alerts and comprehensive audit
+                        trails</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Sizing Tool -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-secondary-900 mb-4">System Sizing Calculator</h2>
+                <p class="text-xl text-secondary-600">Get an instant estimate for your access control requirements</p>
+            </div>
+
+            <div class="card">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Calculator Form -->
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-secondary-700 mb-2">Facility Type</label>
+                            <select id="facility-type" class="input-field">
+                                <option value="office">Office Building</option>
+                                <option value="healthcare">Healthcare Facility</option>
+                                <option value="education">Educational Institution</option>
+                                <option value="manufacturing">Manufacturing Plant</option>
+                                <option value="retail">Retail Location</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-secondary-700 mb-2">Number of Doors</label>
+                            <input type="range" id="door-count" min="1" max="100" value="10" class="w-full" />
+                            <div class="flex justify-between text-sm text-secondary-600 mt-1">
+                                <span>1</span>
+                                <span id="door-display">10</span>
+                                <span>100+</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-secondary-700 mb-2">Number of Users</label>
+                            <input type="range" id="user-count" min="10" max="5000" value="100" step="10"
+                                class="w-full" />
+                            <div class="flex justify-between text-sm text-secondary-600 mt-1">
+                                <span>10</span>
+                                <span id="user-display">100</span>
+                                <span>5000+</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-secondary-700 mb-2">Security Level</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="security-level" value="basic" checked class="mr-2" />
+                                    <span class="text-sm">Basic (Card readers only)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="security-level" value="standard" class="mr-2" />
+                                    <span class="text-sm">Standard (Cards + biometric)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="security-level" value="advanced" class="mr-2" />
+                                    <span class="text-sm">Advanced (Face Recommendations-coming soon)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Display -->
+                    <div class="bg-surface rounded-lg p-6">
+                        <h3 class="font-semibold text-lg mb-4">Estimated System Requirements</h3>
+
+                        <div id="sizing-results" class="space-y-4">
+                            <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                                <span class="text-secondary-700">Door Controllers</span>
+                                <span id="controller-count" class="font-semibold">2 units</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                                <span class="text-secondary-700">Card Readers</span>
+                                <span id="reader-count" class="font-semibold">10 units</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                                <span class="text-secondary-700">Management Software</span>
+                                <span id="software-tier" class="font-semibold">Professional</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                                <span class="text-secondary-700">Estimated</span>
+                                <span id="estimated-cost" class="font-semibold text-primary text-lg">₹15,000 -
+                                    ₹25,000</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <button class="openPopup btn-primary w-full">Get Detailed Quote</button>
+                            <!-- <button class="btn-secondary w-full">Schedule Consultation</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ROI Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-secondary-900 mb-4">Return on Investment</h2>
+                <p class="text-xl text-secondary-600">Quantifiable benefits that justify your access control investment
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Security Staffing Reduction -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Reduced Security Staffing</h3>
+                    <div class="text-3xl font-bold text-success mb-2">40-60%</div>
+                    <p class="text-secondary-600 text-sm">Savings on security personnel costs through automated access
+                        control</p>
+                </div>
+
+                <!-- Improved Audit Efficiency -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Audit Efficiency</h3>
+                    <div class="text-3xl font-bold text-primary mb-2">90%</div>
+                    <p class="text-secondary-600 text-sm">Faster compliance audits with automated reporting and trail
+                        documentation</p>
+                </div>
+
+                <!-- Incident Reduction -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Security Incidents</h3>
+                    <div class="text-3xl font-bold text-warning mb-2">75%</div>
+                    <p class="text-secondary-600 text-sm">Reduction in unauthorized access and security breaches</p>
+                </div>
+
+                <!-- Operational Efficiency -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Operational Efficiency</h3>
+                    <div class="text-3xl font-bold text-accent mb-2">50%</div>
+                    <p class="text-secondary-600 text-sm">Faster employee entry and reduced administrative overhead</p>
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <!-- Case Studies -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-secondary-900 mb-4">Real-World Implementations</h2>
+                <p class="text-xl text-secondary-600">See how our access control solutions work across different
+                    industries and facility types</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Corporate Case Study -->
+                <div class="card card-hover">
+                    <div class="mb-4">
+                        <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Corporate Headquarters Access Control" class="w-full h-48 object-cover rounded-lg"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span
+                                class="bg-primary-100 text-primary-600 px-3 py-1 rounded-full text-sm font-medium">Corporate</span>
+                            <h3 class="font-semibold text-lg mt-2">TechCorp Headquarters</h3>
+                            <p class="text-secondary-600 text-sm">500+ employees across 15 floors</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Challenge</h4>
+                            <p class="text-sm text-secondary-600">
+                                Needed secure access control for different security zones, visitor management, and
+                                integration with existing security systems.
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Solution</h4>
+                            <ul class="text-sm text-secondary-600 space-y-1">
+                                <li>• Multi-technology card readers</li>
+                                <li>• Mobile credential integration</li>
+                                <li>• Visitor management kiosks</li>
+                                <li>• Executive floor biometric access</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Results</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-primary">75%</div>
+                                    <div class="text-xs text-secondary-600">Faster Entry</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-primary">99.9%</div>
+                                    <div class="text-xs text-secondary-600">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational Case Study -->
+                <div class="card card-hover">
+                    <div class="mb-4">
+                        <img src="https://images.pixabay.com/photo/2017/07/02/19/24/university-2468370_1280.jpg"
+                            alt="University Campus Access Control" class="w-full h-48 object-cover rounded-lg"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span
+                                class="bg-success-100 text-success-600 px-3 py-1 rounded-full text-sm font-medium">Education</span>
+                            <h3 class="font-semibold text-lg mt-2">Metro University Campus</h3>
+                            <p class="text-secondary-600 text-sm">25,000 students, 2,500 faculty & staff</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Challenge</h4>
+                            <p class="text-sm text-secondary-600">
+                                Campus-wide access control for dormitories, academic buildings, and research facilities
+                                with varying security levels.
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Solution</h4>
+                            <ul class="text-sm text-secondary-600 space-y-1">
+                                <li>• Student ID card integration</li>
+                                <li>• Time-based access scheduling</li>
+                                <li>• Emergency lockdown capability</li>
+                                <li>• Research lab biometric zones</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Results</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-success">50%</div>
+                                    <div class="text-xs text-secondary-600">Reduced Incidents</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-success">100%</div>
+                                    <div class="text-xs text-secondary-600">Compliance</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare Case Study -->
+                <div class="card card-hover">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2940&auto=format&fit=crop"
+                            alt="Hospital Access Control System" class="w-full h-48 object-cover rounded-lg"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span
+                                class="bg-accent-100 text-accent-600 px-3 py-1 rounded-full text-sm font-medium">Healthcare</span>
+                            <h3 class="font-semibold text-lg mt-2">Regional Medical Center</h3>
+                            <p class="text-secondary-600 text-sm">HIPAA-compliant zone restrictions</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Challenge</h4>
+                            <p class="text-sm text-secondary-600">
+                                HIPAA-compliant access control for patient areas, pharmacy, and medical records with
+                                strict audit requirements.
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Solution</h4>
+                            <ul class="text-sm text-secondary-600 space-y-1">
+                                <li>• Role-based access control</li>
+                                <li>• Biometric pharmacy access</li>
+                                <li>• Patient room privacy locks</li>
+                                <li>• Comprehensive audit trails</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-secondary-900">Results</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-accent">100%</div>
+                                    <div class="text-xs text-secondary-600">HIPAA Compliant</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-accent">90%</div>
+                                    <div class="text-xs text-secondary-600">Faster Audits</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-success to-success-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Smart facial-recognition Access System (coming soon)</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                We’re developing advanced AI-powered facial recognition systems for seamless and secure access control.
+                Designed to integrate with CCTV and smart surveillance, our future-ready solution will offer fast,
+                contactless, and intelligent entry management.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <!-- <button class="bg-white text-success font-semibold py-4 px-8 rounded-lg hover:bg-secondary-50 transition-colors text-lg">
+                    Schedule Free Assessment
+                </button> -->
+                <!-- <button class="border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-success transition-colors text-lg">
+                    Download Buyer's Guide
+                </button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1">
+                    <div class="flex items-center">
+                        <img src="../assets/images/logo.png" alt="Sharlik Solutions" class="h-10 w-auto" />
+                    </div>
+                    <p class="text-secondary-400 mb-4">
+                        Protective Excellence Through Innovation. Your trusted partner in fire safety and security
+                        infrastructure.
+                    </p>
+                    <div class="text-sm text-secondary-400">
+                        <!-- <p>24/7 Emergency: (555) 911-FIRE</p> -->
+                        <p>Email: info@sharliksolutions.com</p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="fire_safety_solutions.html" class="hover:text-white transition-colors">Fire Safety
+                                Solutions</a></li>
+                        <li><a href="security_systems.html" class="hover:text-white transition-colors">Security
+                                Systems</a></li>
+                        <li><a href="access_control.html" class="hover:text-white transition-colors">Access Control</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Emergency
+                                Response</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Maintenance
+                                Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="about_sharlik.html" class="hover:text-white transition-colors">About Sharlik</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Certifications</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Case Studies</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="resource_hub.html" class="hover:text-white transition-colors">Resource Hub</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Technical Guides</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Compliance Info</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Training
+                                Materials</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Support Portal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-400 text-sm">
+                    © 2025 Sharlik Solutions. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)"
+                        class="text-secondary-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                    <a href="javascript:void(0)"
+                        class="text-secondary-400 hover:text-white transition-colors text-sm">Terms of Service</a>
+                    <a href="javascript:void(0)"
+                        class="text-secondary-400 hover:text-white transition-colors text-sm">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Emergency Button -->
+    <!-- <div class="fixed bottom-6 right-6 z-50">
+        <button class="emergency-cta shadow-emergency animate-pulse-slow">
+            🚨 Emergency
+        </button>
+    </div> -->
+
+
+    <!-- Popup Form -->
+    <div id="popupForm"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999; overflow:auto;">
+        <div
+            style="background:white; padding:20px; width:90%; max-width:400px; margin:100px auto; border-radius:10px; position:relative;">
+
+            <!-- Close Button -->
+            <button onclick="closeForm()"
+                style="position:absolute; top:10px; right:10px; background:red; color:white; border:none; border-radius:50%; width:30px; height:30px; font-weight:bold;">&times;</button>
+
+            <h3>Get Quotation</h3>
+
+            <!-- SheetDB Embedded Form -->
+            <script src="https://sheetdb.io/s/f/cqpyth0k68bvt.js"></script>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const popupForm = document.getElementById("popupForm");
+        const openButtons = document.querySelectorAll(".openPopup");
+
+        openButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                popupForm.style.display = "block";
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        function closeForm() {
+            popupForm.style.display = "none";
+            document.body.style.overflow = "";
+        }
+    </script>
+
+
+    <!-- Contact Us Popup -->
+    <div id="contactPopupForm"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999; overflow:auto;">
+        <div
+            style="background:white; padding:20px; width:90%; max-width:400px; margin:100px auto; border-radius:10px; position:relative;">
+
+            <!-- Close Button -->
+            <button onclick="closeContactForm()"
+                style="position:absolute; top:10px; right:10px; background:red; color:white; border:none; border-radius:50%; width:30px; height:30px; font-weight:bold;">&times;</button>
+
+            <h3>Contact Us</h3>
+
+            <!-- SheetDB Embedded Contact Form -->
+            <script src="https://sheetdb.io/s/f/nfxgtfh982bjl.js"></script>
+
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Contact Form Popup -->
+    <script>
+        const contactPopup = document.getElementById("contactPopupForm");
+
+        // Attach to all buttons with class 'contactPopup'
+        document.querySelectorAll(".contactPopup").forEach(button => {
+            button.addEventListener("click", () => {
+                contactPopup.style.display = "block";
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        // Close form function
+        function closeContactForm() {
+            contactPopup.style.display = "none";
+            document.body.style.overflow = "";
+        }
+    </script>
+
+
+
+
+
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Access control simulator
+        const accessMethods = document.querySelectorAll('.access-method');
+        const accessLog = document.getElementById('access-log');
+
+        const simulatedUsers = [
+            { name: 'Sarah Johnson - Marketing', status: 'granted' },
+            { name: 'Mike Chen - IT', status: 'granted' },
+            { name: 'Dr. Smith - Research', status: 'granted' },
+            { name: 'Visitor Badge #1247', status: 'pending' },
+            { name: 'John Doe - Facilities', status: 'granted' },
+            { name: 'Emergency Override', status: 'granted' }
+        ];
+
+        accessMethods.forEach(method => {
+            method.addEventListener('click', function () {
+                // Remove active class from all methods
+                accessMethods.forEach(m => {
+                    m.classList.remove('active', 'bg-success/20', 'border-success/40');
+                    m.classList.add('bg-white/10', 'border-white/20');
+                });
+
+                // Add active class to clicked method
+                this.classList.add('active', 'bg-success/20', 'border-success/40');
+                this.classList.remove('bg-white/10', 'border-white/20');
+
+                // Simulate access event
+                const randomUser = simulatedUsers[Math.floor(Math.random() * simulatedUsers.length)];
+                const statusClass = randomUser.status === 'granted' ? 'text-success' : 'text-warning';
+                const statusIcon = randomUser.status === 'granted' ? '✓ Granted' : '⏳ Pending';
+
+                // Add new entry to log
+                const newEntry = document.createElement('div');
+                newEntry.className = 'flex justify-between items-center animate-fade-in';
+                newEntry.innerHTML = `
+                    <span>${randomUser.name}</span>
+                    <span class="${statusClass}">${statusIcon}</span>
+                `;
+
+                accessLog.insertBefore(newEntry, accessLog.firstChild);
+
+                // Remove oldest entry if more than 3
+                if (accessLog.children.length > 3) {
+                    accessLog.removeChild(accessLog.lastChild);
+                }
+            });
+        });
+
+        // System sizing calculator
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const doorCountSlider = document.getElementById('door-count');
+            const userCountSlider = document.getElementById('user-count');
+            const doorDisplay = document.getElementById('door-display');
+            const userDisplay = document.getElementById('user-display');
+            const facilityType = document.getElementById('facility-type');
+
+            function updateSizingCalculator() {
+                const doors = parseInt(doorCountSlider.value);
+                const users = parseInt(userCountSlider.value);
+                const facility = facilityType.value;
+                const securityLevelRadio = document.querySelector('input[name="security-level"]:checked');
+
+                if (!securityLevelRadio) return; // prevent error
+                const securityLevel = securityLevelRadio.value;
+
+                // Update display
+                doorDisplay.textContent = doors;
+                userDisplay.textContent = users;
+
+                // Software tier logic
+                let softwareTier = 'Essential';
+                if (doors > 20 || users > 500) softwareTier = 'Professional';
+                if (doors > 50 || users > 2000) softwareTier = 'Enterprise';
+
+                // Base component prices (₹)
+                let readerCost = 4500;
+                let lockCost = 3000;
+                let cableCost = 1000;
+                let installCost = 1500;
+                const controllerPer4Doors = 10000;
+
+                // Apply security level multipliers
+                if (securityLevel === 'standard') {
+                    readerCost *= 1.3;     // cards + mobile
+                    lockCost *= 1.1;
+                    installCost *= 1.15;
+                } else if (securityLevel === 'advanced') {
+                    readerCost *= 1.7;     // cards + mobile + biometric
+                    lockCost *= 1.3;
+                    installCost *= 1.3;
+                }
+                // Basic = no multiplier
+
+                // Quantities
+                const controllers = Math.ceil(doors / 4);
+                const readers = doors;
+                const locks = doors;
+
+                // Software pricing
+                let softwareCost = 20000;
+                if (softwareTier === 'Professional') softwareCost = 50000;
+                if (softwareTier === 'Enterprise') softwareCost = 100000;
+
+                // Cost breakdown
+                const hardwareCost = (readers * readerCost) + (locks * lockCost) + (doors * cableCost) + (controllers * controllerPer4Doors);
+                const installationCost = doors * installCost;
+                const serviceCharge = hardwareCost * 0.10;
+
+                const totalBeforeGST = hardwareCost + installationCost + serviceCharge + softwareCost;
+                const gst = totalBeforeGST * 0.18;
+                const totalCost = Math.round(totalBeforeGST + gst);
+
+                const lowEstimate = Math.round(totalCost * 0.9);
+                const highEstimate = Math.round(totalCost * 1.1);
+
+                // Update results
+                document.getElementById('controller-count').textContent = `${controllers} units`;
+                document.getElementById('reader-count').textContent = `${readers} units`;
+                document.getElementById('software-tier').textContent = softwareTier;
+                document.getElementById('estimated-cost').textContent = `₹${lowEstimate.toLocaleString('en-IN')} - ₹${highEstimate.toLocaleString('en-IN')}`;
+            }
+
+            // Bind events
+            doorCountSlider.addEventListener('input', updateSizingCalculator);
+            userCountSlider.addEventListener('input', updateSizingCalculator);
+            facilityType.addEventListener('change', updateSizingCalculator);
+            document.querySelectorAll('input[name="security-level"]').forEach(radio => {
+                radio.addEventListener('change', updateSizingCalculator);
+            });
+
+            // Initial run
+            updateSizingCalculator();
+        });
+
+
+
+        // ROI Calculator
+        function updateROICalculator() {
+            const staffCosts = parseFloat(document.getElementById('staff-costs').value) || 120000;
+            const keyCosts = parseFloat(document.getElementById('key-costs').value) || 5000;
+            const incidentCosts = parseFloat(document.getElementById('incident-costs').value) || 15000;
+
+            const staffSavings = Math.round(staffCosts * 0.5);
+            const keySavings = Math.round(keyCosts * 0.8);
+            const incidentSavings = Math.round(incidentCosts * 0.75);
+            const totalSavings = staffSavings + keySavings + incidentSavings;
+
+            const systemCost = 50000; // Estimated system cost
+            const paybackMonths = Math.round((systemCost / totalSavings) * 12);
+
+            document.getElementById('staff-savings').textContent = `$${staffSavings.toLocaleString()}`;
+            document.getElementById('key-savings').textContent = `$${keySavings.toLocaleString()}`;
+            document.getElementById('incident-savings').textContent = `$${incidentSavings.toLocaleString()}`;
+            document.getElementById('total-savings').textContent = `$${totalSavings.toLocaleString()}`;
+            document.getElementById('payback-period').textContent = `${paybackMonths} months`;
+        }
+
+        document.getElementById('staff-costs').addEventListener('input', updateROICalculator);
+        document.getElementById('key-costs').addEventListener('input', updateROICalculator);
+        document.getElementById('incident-costs').addEventListener('input', updateROICalculator);
+
+        // Initialize calculators
+        updateSizingCalculator();
+        updateROICalculator();
+    </script>
+</body>
+
+</html>

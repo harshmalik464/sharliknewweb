@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources - Information & Guides | Sharlik Solutions</title>
+    <meta name="description" content="Helpful information and guides for fire safety and security systems. Learn about best practices and industry standards." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsharlikco6768back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="../assets/images/logo.png" alt="Sharlik Solutions" class="h-10 w-auto" />
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-secondary-700 hover:text-primary transition-colors">Home</a>
+                    <a href="fire_safety_solutions.html" class="text-secondary-700 hover:text-primary transition-colors">Fire Safety</a>
+                    <a href="security_systems.html" class="text-secondary-700 hover:text-primary transition-colors">Security Systems</a>
+                    <a href="access_control.html" class="text-secondary-700 hover:text-primary transition-colors">Access Control</a>
+                    <a href="about_sharlik.html" class="text-secondary-700 hover:text-primary transition-colors">About</a>
+                    <a href="resource_hub.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Resources</a>
+                    <button class="btn-primary contactPopup">Contact Us</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-secondary-700 hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="homepage.html" class="text-secondary-700">Home</a>
+                    <a href="fire_safety_solutions.html" class="text-secondary-700">Fire Safety</a>
+                    <a href="security_systems.html" class="text-secondary-700">Security Systems</a>
+                    <a href="access_control.html" class="text-secondary-700">Access Control</a>
+                    <a href="about_sharlik.html" class="text-secondary-700">About</a>
+                    <a href="resource_hub.html" class="text-primary font-semibold">Resources</a>
+                    <button class="btn-primary w-full mt-3">Get Quote</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-900 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Helpful
+                    <span class="text-primary">Resources</span>
+                </h1>
+                <p class="text-xl text-secondary-300 max-w-3xl mx-auto mb-8">
+                    Information and guides to help you understand fire safety and security systems for your business.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary"></div>
+                        <div class="text-sm text-secondary-400">Helpful Articles</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary"></div>
+                        <div class="text-sm text-secondary-400">Installation Guides</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary"></div>
+                        <div class="text-sm text-secondary-400">Industry Standards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-secondary-900 mb-4">Information Categories</h2>
+                <p class="text-xl text-secondary-600">Find helpful information organized by topic</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Fire Safety Information -->
+                <div class="card card-hover cursor-pointer" onclick="showCategory('fire_safety')">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary-900 mb-2">Fire Safety Information</h3>
+                        <p class="text-secondary-600 mb-4">Learn about fire detection, suppression systems, and safety protocols</p>
+                        <div class="text-sm text-secondary-500">
+                            <span class="bg-accent-100 text-accent-600 px-2 py-1 rounded-full">Articles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Systems Guide -->
+                <div class="card card-hover cursor-pointer" onclick="showCategory('security')">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary-900 mb-2">Security Systems Guide</h3>
+                        <p class="text-secondary-600 mb-4">Information about surveillance systems and security best practices</p>
+                        <div class="text-sm text-secondary-500">
+                            <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full"> Articles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Access Control Info -->
+                <div class="card card-hover cursor-pointer" onclick="showCategory('access')">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-4 4-4-4 4-4 .257-.257A6 6 0 1118 8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary-900 mb-2">Access Control Info</h3>
+                        <p class="text-secondary-600 mb-4">Understanding modern access control systems and technologies</p>
+                        <div class="text-sm text-secondary-500">
+                            <span class="bg-success-100 text-success-600 px-2 py-1 rounded-full"> Articles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-secondary-900 mb-4">Featured Articles</h2>
+                <p class="text-xl text-secondary-600">Most helpful and frequently accessed information</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Latest Information -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-secondary-900 mb-4">Latest Information</h3>
+                    
+                    <div class="card">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-secondary-900 mb-1">Fire Safety Best Practices</h4>
+                                <p class="text-sm text-secondary-600 mb-2">Essential fire safety guidelines for business facilities</p>
+                                <span class="text-xs text-accent font-medium">Updated recently</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-secondary-900 mb-1">Security System Basics</h4>
+                                <p class="text-sm text-secondary-600 mb-2">Understanding modern security technology for businesses</p>
+                                <span class="text-xs text-primary font-medium">Updated recently</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-secondary-900 mb-1">Compliance Guidelines</h4>
+                                <p class="text-sm text-secondary-600 mb-2">Important compliance requirements for safety systems</p>
+                                <span class="text-xs text-success font-medium">Updated recently</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Installation Guides -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-secondary-900 mb-4">Installation Guides</h3>
+                    
+                    <div class="card">
+                        <h4 class="font-semibold text-secondary-900 mb-3">Fire Detection System Planning</h4>
+                        <p class="text-sm text-secondary-600 mb-2">Guide to planning fire detection system installation</p>
+                        <div class="flex items-center justify-between text-xs text-secondary-500">
+                            <span>Installation Guide</span>
+                            <span>Helpful Resource</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h4 class="font-semibold text-secondary-900 mb-3">Security Camera Placement</h4>
+                        <p class="text-sm text-secondary-600 mb-2">Best practices for security camera positioning</p>
+                        <div class="flex items-center justify-between text-xs text-secondary-500">
+                            <span>Installation Guide</span>
+                            <span>Helpful Resource</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h4 class="font-semibold text-secondary-900 mb-3">Access Control Setup</h4>
+                        <p class="text-sm text-secondary-600 mb-2">Understanding access control system setup requirements</p>
+                        <div class="flex items-center justify-between text-xs text-secondary-500">
+                            <span>Installation Guide</span>
+                            <span>Helpful Resource</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Standards -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-secondary-900 mb-4">Industry Standards</h3>
+                    
+                    <div class="card">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-secondary-900 mb-2">NFPA Standards</h4>
+                            <p class="text-sm text-secondary-600 mb-4">Understanding National Fire Protection Association standards</p>
+                            <button class="btn-primary w-full">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-secondary-900 mb-2">OSHA Guidelines</h4>
+                            <p class="text-sm text-secondary-600 mb-4">Workplace safety guidelines and requirements</p>
+                            <button class="btn-primary w-full">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-secondary-900 mb-2">UL Standards</h4>
+                            <p class="text-sm text-secondary-600 mb-4">Underwriters Laboratories safety certification standards</p>
+                            <button class="btn-primary w-full">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-primary-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Need Specific Information?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Can't find what you're looking for? Our experts are available to provide personalized guidance and answer your questions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white contactPopup text-primary font-semibold py-4 px-8 rounded-lg hover:bg-secondary-50 transition-colors text-lg">
+                    Contact Our Team
+                </button>
+                <!-- <button class="border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-primary transition-colors text-lg">
+                    Schedule Consultation
+                </button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1">
+                    <div class="flex items-center mb-4">
+                        <img src="../assets/images/1000059826-1752996527896.png" alt="Sharlik Solutions" class="h-8 w-auto" />
+                    </div>
+                    <p class="text-secondary-400 mb-4">
+                        Professional infrastructure solutions for modern businesses. Your trusted partner in fire safety and security systems.
+                    </p>
+                    <div class="text-sm text-secondary-400">
+                        <p>Phone: (555) 123-SAFE</p>
+                        <p>Email: info@sharliksolutions.com</p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="fire_safety_solutions.html" class="hover:text-white transition-colors">Fire Safety Solutions</a></li>
+                        <li><a href="security_systems.html" class="hover:text-white transition-colors">Security Systems</a></li>
+                        <li><a href="access_control.html" class="hover:text-white transition-colors">Access Control</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Installation Services</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="about_sharlik.html" class="hover:text-white transition-colors">About Sharlik</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Certifications</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="resource_hub.html" class="hover:text-white transition-colors">Resource Hub</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Safety Guides</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Compliance Info</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Industry Standards</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-400 text-sm">
+                    © 2025 Sharlik Solutions. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors text-sm">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors text-sm">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Emergency Button -->
+    <!-- <div class="fixed bottom-6 right-6 z-50">
+        <button class="emergency-cta shadow-emergency animate-pulse-slow">
+            🚨 Emergency
+        </button>
+    </div> -->
+
+<!-- Contact Us Popup -->
+<div id="contactPopupForm" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999; overflow:auto;">
+  <div style="background:white; padding:20px; width:90%; max-width:400px; margin:100px auto; border-radius:10px; position:relative;">
+    
+    <!-- Close Button -->
+    <button onclick="closeContactForm()" style="position:absolute; top:10px; right:10px; background:red; color:white; border:none; border-radius:50%; width:30px; height:30px; font-weight:bold;">&times;</button>
+    
+    <h3>Contact Us</h3>
+
+    <!-- SheetDB Embedded Contact Form -->
+    <script src="https://sheetdb.io/s/f/nfxgtfh982bjl.js"></script>
+    
+  </div>
+</div>
+
+<!-- JavaScript to Handle Contact Form Popup -->
+<script>
+  const contactPopup = document.getElementById("contactPopupForm");
+
+  // Attach to all buttons with class 'contactPopup'
+  document.querySelectorAll(".contactPopup").forEach(button => {
+    button.addEventListener("click", () => {
+      contactPopup.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // Close form function
+  function closeContactForm() {
+    contactPopup.style.display = "none";
+    document.body.style.overflow = "";
+  }
+</script>
+
+
+
+
+
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category display functionality
+        function showCategory(category) {
+            // This would typically show filtered content based on category
+            console.log('Showing category:', category);
+            
+            // For demo purposes, we'll just scroll to the featured resources section
+            document.querySelector('#featured-resources')?.scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Search functionality
+        document.querySelector('input[type="text"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = this.value;
+                console.log('Searching for:', searchTerm);
+                // Implement search functionality here
+            }
+        });
+
+        // Video play functionality
+        document.querySelectorAll('.card-hover').forEach(card => {
+            const playButton = card.querySelector('button');
+            if (playButton && card.querySelector('img[alt*="Installation"], img[alt*="Setup"], img[alt*="Programming"]')) {
+                playButton.addEventListener('click', function() {
+                    console.log('Playing video');
+                    // Implement video player functionality here
+                });
+            }
+        });
+
+        // Tool launch functionality
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent === 'Launch Tool') {
+                button.addEventListener('click', function() {
+                    const toolName = this.closest('.card').querySelector('h4').textContent;
+                    console.log('Launching tool:', toolName);
+                    // Implement tool launch functionality here
+                });
+            }
+        });
+
+        // Download functionality
+        document.querySelectorAll('button').forEach(button => {
+            const downloadIcon = button.querySelector('svg path[d*="M12 10v6m0 0l-3-3m3 3l3-3"]');
+            if (downloadIcon) {
+                button.addEventListener('click', function() {
+                    const fileName = this.closest('.card').querySelector('h4').textContent;
+                    console.log('Downloading:', fileName);
+                    // Implement download functionality here
+                });
+            }
+        });
+
+        // Webinar registration
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent === 'Register') {
+                button.addEventListener('click', function() {
+                    const webinarTitle = this.closest('.card').querySelector('h3').textContent;
+                    console.log('Registering for webinar:', webinarTitle);
+                    // Implement registration functionality here
+                });
+            }
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading states for interactive elements
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                if (!this.classList.contains('loading')) {
+                    this.classList.add('loading');
+                    const originalText = this.textContent;
+                    this.textContent = 'Loading...';
+                    
+                    setTimeout(() => {
+                        this.classList.remove('loading');
+                        this.textContent = originalText;
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
